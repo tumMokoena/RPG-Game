@@ -4,8 +4,8 @@ namespace RPG_Game.Services.CharacterService
 {
     public interface ICharacterService
     {
-        Task<Character> GetCharacterById(int id);
-        Task<List<Character>> GetAllCharacters();
-        Task<List<Character>> CreateCharacter(Character character);
+        Task<ServiceResponse<Character>> GetCharacterById(int id);
+        Task<ServiceResponse<List<Character>>> GetAllCharacters();
+        Task<ServiceResponse<List<Character>>> CreateCharacter(Character character);
     }
 }

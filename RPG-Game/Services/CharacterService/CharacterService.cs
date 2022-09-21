@@ -10,20 +10,25 @@ namespace RPG_Game.Services.CharacterService
             new Character{ Id = 2 , Name = "Tumelo", Class = RpgClass.CLERIC }
 
         };
-        public async Task<List<Character>> CreateCharacter(Character character)
+        public async Task<ServiceResponse<List<Character>>> CreateCharacter(Character character)
         {
+            var serviceResponse = new ServiceResponse<List<Character>>();
             characters.Add(character);
-            return characters;
+            serviceResponse.Data = characters;
+            return serviceResponse;
         }
 
-        public async Task<List<Character>> GetAllCharacters()
+        public async Task<ServiceResponse<List<Character>>> GetAllCharacters()
         {
-            return characters;
+            return new ServiceResponse<List<Character>>() { Data = characters};
         }
 
-        public async Task<Character> GetCharacterById(int id)
+        public async Task<ServiceResponse<Character>> GetCharacterById(int id)
         {
-            return characters.FirstOrDefault(c => c.Id == id);
+            var serviceResponse = new ServiceResponse<Character>();
+            var character = characters.FirstOrDefault(c => c.Id == id);
+            serviceResponse.Data = character;
+            return serviceResponse;
         }
     }
 }
