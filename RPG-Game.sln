@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG-Game", "RPG-Game\RPG-Game.csproj", "{F14916E2-BA0C-43AA-85D3-71FE57428286}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG-Game.WebAPI", "RPG-Game\RPG-Game.WebAPI.csproj", "{F14916E2-BA0C-43AA-85D3-71FE57428286}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG-Game.CoreEntities", "RPG-Game.CoreEntities\RPG-Game.CoreEntities.csproj", "{142C0980-0EEC-4A45-B0FB-3F64F5F7C0B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F14916E2-BA0C-43AA-85D3-71FE57428286}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F14916E2-BA0C-43AA-85D3-71FE57428286}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F14916E2-BA0C-43AA-85D3-71FE57428286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{142C0980-0EEC-4A45-B0FB-3F64F5F7C0B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{142C0980-0EEC-4A45-B0FB-3F64F5F7C0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{142C0980-0EEC-4A45-B0FB-3F64F5F7C0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{142C0980-0EEC-4A45-B0FB-3F64F5F7C0B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
